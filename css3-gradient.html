@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Gradient</title> 
+	<style>
+	.container { margin: 0 auto; width: 650px; }
+	.box1, .box2, .box3 {
+	  height: 200px;
+	  width: 200px;
+	  background: #51ad51;
+	  color: #ffffff; 
+	}
+	.box1 {
+		background: #a90329; /* Old browsers */
+		background: -moz-linear-gradient(left,  #a90329 0%, #12d304 100%, #6d0019 100%, #6d0019 102%, #12d304 102%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #a90329 0%,#12d304 100%,#6d0019 100%,#6d0019 102%,#12d304 102%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #a90329 0%,#12d304 100%,#6d0019 100%,#6d0019 102%,#12d304 102%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#12d304',GradientType=1 ); /* IE6-9 */
+	}
+	.box2 {
+		background: -webkit-radial-gradient(center,70% 100px,red,yellow,green);
+		background: radial-gradient(70% 100px at center,red,yellow,green);
+	}
+	.box3 {
+		background: -webkit-radial-gradient(top,47% 232px,red,yellow,green);
+		background: radial-gradient(47% 232px at top,red,yellow,green);
+	}
+	p {
+	  font: 20px/200px Helvetica, sans-serif;
+	  text-align: center;
+	} 
+	.pos { display: inline-block; }
+	</style>
+</head> 
+<body>
+<div class="container">
+	<div class="box1 pos">
+	  <p>Box</p>
+	</div> 
+	<div class="box2 pos">
+	  <p>Box</p>
+	</div> 
+	<div class="box3 pos">
+	  <p>Box</p>
+	</div> 
+</div> 
+</body>
+</html>
